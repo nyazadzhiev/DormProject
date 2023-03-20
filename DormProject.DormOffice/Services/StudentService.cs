@@ -21,7 +21,7 @@ namespace DormProject.DormOffice.Services
             {
                 FirstName = studentRequest.FirstName,
                 LastName = studentRequest.LastName,
-                Grade = studentRequest.Grade
+                Grade = studentRequest.Grade,
             };
 
             await _studentRepository.AddStudentAsync(student);

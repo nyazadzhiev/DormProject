@@ -64,7 +64,8 @@ if (db.Database.EnsureCreated())
 {
     RelationalDatabaseCreator databaseCreator =
     (RelationalDatabaseCreator)db.Database.GetService<IDatabaseCreator>();
-    databaseCreator.CreateTables();
+    //databaseCreator.CreateTables();
+    db.Database.Migrate();
 }
 
 app.Run();
